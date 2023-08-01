@@ -16,7 +16,7 @@ const htmlContent =
             ${HaulersList()}
         </section>
         <section>
-            <h2>Docks<h2>
+            <h2>Docks</h2>
             ${DockList()}
         </section>
     </article>`

@@ -8,7 +8,7 @@ const database = {
     haulers: [
         { id: 1, name: "Teenie Weenie", dockId: 3},
         { id: 2, name: "Jean Bean", dockId: 2},
-        { id: 3, name: "Humpty Dumpty", dockId: 4},
+        { id: 3, name: "Humpty Dumpty", dockId: 2},
         { id: 4, name: "Lou Goo", dockId: 1},
         { id: 5, name: "Lyle Crocodile", dockId: 1},
 
@@ -18,7 +18,12 @@ const database = {
         {id: 2, name: "Titan Titanic", haulerId: 3 },
         {id: 3, name: "Ocean Spray", haulerId: 5},
         {id: 4, name: "Sea Breeze", haulerId: 2},
-        {id: 5, name: "Lady Atlantis", haulerId: 4}
+        {id: 5, name: "Lady Atlantis", haulerId: 4},
+        {id: 6, name: "Myflour", haulerId: 1},
+        {id: 7, name: "Plankton", haulerId: 3 },
+        {id: 8, name: "Bab's Barnacle", haulerId: 5},
+        {id: 9, name: "Pirate's of the Caribbean 4", haulerId: 2},
+        {id: 10, name: "Lois Griffin", haulerId: 1}
     ]
 }
 
