@@ -27,10 +27,11 @@ const database = {
     ]
 }
 
-export const getDocks = () => {
-    // You write the code for copying the array and returning it
-    return database.docks.map(dock=>({...dock}))
-}
+// export const getDocks = () => {
+//     // You write the code for copying the array and returning it
+//     return database.docks.map(dock=>({...dock}))
+// }
+export const docksData = structuredClone(database.docks)
 
 export const getHaulingShips = () => {
     // You write the code for copying the array and returning it

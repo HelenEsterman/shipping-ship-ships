@@ -1,8 +1,8 @@
-import { getDocks, getHaulingShips } from "./database.js"
+import { docksData, getHaulingShips } from "./database.js"
 
 const allHaulers = getHaulingShips()
 
-const docks = getDocks()
+const docks = docksData
 
 docks.sort(function (a, b) {
     if (a.location < b.location) {
