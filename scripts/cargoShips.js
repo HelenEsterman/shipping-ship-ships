@@ -2,9 +2,20 @@ import { getShippingShips, getHaulingShips } from "./database.js"
 
 const haulers = getHaulingShips()
 
+const cargoShips = getShippingShips()
+
+cargoShips.sort(function (a, b) {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  })
 
 export const CargoShipList = () => {
-    const cargoShips = getShippingShips()
+
 
     let cargoHTML = "<ul>"
 

@@ -26,3 +26,5 @@ const htmlContent =
     // </article>
 
     htmlContainer.innerHTML = htmlContent
+
+    

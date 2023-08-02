@@ -2,9 +2,19 @@ import { getDocks, getHaulingShips } from "./database.js"
 
 const allHaulers = getHaulingShips()
 
-export const DockList = () => {
-    const docks = getDocks()
+const docks = getDocks()
 
+docks.sort(function (a, b) {
+    if (a.location < b.location) {
+      return -1;
+    }
+    if (a.location > b.location) {
+      return 1;
+    }
+    return 0;
+  })
+
+export const DockList = () => {
     let docksHTML = "<ul>"
 
     for (const dock of docks) {
